@@ -16,11 +16,11 @@ function CreateProfile() {
 
     if (names.includes(insertName.value)) {
         alert('Nome já existe');
-      } else if (phones.includes(parseInt(insertPhone.value))) {
+      } else if (phones.includes(insertPhone.value)) {
         alert('Número de telefone já foi cadastrado');
       } else {
         names.push(insertName.value);
-        phones.push(parseInt(insertPhone.value));
+        phones.push(insertPhone.value);
     
         let line = '<tr>';
         line += `<td>${insertName.value}</td>`;
